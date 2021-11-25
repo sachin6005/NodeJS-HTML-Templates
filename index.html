@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node-js HTML template</title>
+    <style>
+          #head{
+              height: 40px;
+              width: 100%;
+              padding: 20px;
+              background-color: blue;
+          }
+          .menu{
+             height: 10px;
+             width: 20px;
+             padding: 10px;
+             margin-right: 20px;
+             background-color: darkseagreen;
+          }
+          #count{
+              background-color: maroon;
+              width: auto;
+              height: 50px;
+              padding-top: 5px;
+              
+          }
+          body{
+              background-color: dimgray;
+          }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="head">
+            <span class="menu">Home</span>
+            <span class="menu">About</span>
+            <span class="menu">Contact</span>
+        </nav>
+    </header>
+    <header>
+        <section>
+            <div id="count">
+                <h1>Total count {%TOTAL_COUNT%}</h1>
+            </div>
+            <div>
+                <h1>Students Data</h1>
+            </div>
+            <div>
+               {%STUDENTS_DATA%}
+            </div>
+        </section>
+    </header>
+</body>
+</html>
